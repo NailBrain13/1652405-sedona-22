@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Фото и видео</title>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <nav class="main-nav">
+      <button class="main-nav__toogle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html"> Главная </a>
+          </li>
+          <li class="main-nav__item">
+            <a> Фото и видео </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html"> Форма отзыва </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#!"> HTML ACADEMY </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/102x84" alt="Логотип Седоны" width="102" height="84" />
+    </a>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Примеры фото и видео</h1>
+
+    <section class="page-intro">
+      <div class="page-intro__img">
+        <img src="https://via.placeholder.com/900x210" width="900" height="210" alt="Панорама горы" />
+      </div>
+
+      <div class="page-intro__wrapper">
+        <h2 class="page-intro__title">Фото и видео</h2>
+        <p class="page-intro__content">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </div>
+    </section>
+
+    <section class="photo">
+      <h2 class="visually-hidden">Примеры фото и видео</h2>
+
+      <ul class="photo__list">
+        <li class="photo__item">
+          <a href="#!" class="photo__image">
+            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат на дороге">
+          </a>
+          <p class="photo__title">Народные просторы</p>
+          <p class="photo__author">Автор фото: Борис</p>
+          <p class="photo__likes">1350</p>
+        </li>
+
+        <li class="photo__item">
+          <a href="#!" class="photo__image">
+            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Кактус">
+          </a>
+          <p class="photo__title">Местная растительность</p>
+          <p class="photo__author">Автор фото: Сергей</p>
+          <p class="photo__likes">143</p>
+        </li>
+
+        <li class="photo__item">
+          <a href="#!" class="photo__image">
+            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Горная дорога">
+          </a>
+          <p class="photo__title">Дорога на север</p>
+          <p class="photo__author">Автор фото: Петр</p>
+          <p class="photo__likes">96</p>
+        </li>
+
+        <li class="photo__item">
+          <a href="#!" class="photo__image">
+            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Панорама гор">
+          </a>
+          <p class="photo__title">Мост дьявола</p>
+          <p class="photo__author">Автор фото: Антон</p>
+          <p class="photo__likes">254</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="video">
+      <h2 class="visually-hidden">Видео превью</h2>
+      <p class="video__title">
+        Все еще сомневаетесь?
+      </p>
+      <p class="video__text">
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+
+      <video class="video__content" src="#!" poster="https://via.placeholder.com/320x200" width="320" height="200"></video>
+
+      <!--Кнопки управления для кастомизацнии-->
+      <div class="video__panel control">
+        <!--Не уверен на счет кнопки play её нету в стайл-гайде-->
+
+        <button class="control__btn control__btn--replay" type="button">replay</button>
+        <progress class="control__volume-bar" max="100" value="40"></progress>
+        <button class="control__btn control__btn--subtittles" type="button">subtittles</button>
+        <button class="control__btn control__btn--fullscreen" type="button">fullscreen</button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag hashtag">
+        <p class="hashtag__content">#visitSedona</p>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#!">twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#!">facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#!">youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">
+          Разработано
+          <a class="copyright__link" href="#!">HTML:academy-logo</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
