@@ -1,0 +1,31 @@
+.registration {
+  background-color: $white;
+}
+
+.registration__wrapper {
+  padding: 33px 20px 49px 20px;
+}
+
+.registration__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding-bottom: 34px;
+}
+
+.registration__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 27px;
+}
+
+.registration__button {
+  display: inline-block;
+  padding: 15px 32px 18px 32px;
+  background-color: $blue;
+  color: $white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}

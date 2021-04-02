@@ -1,0 +1,27 @@
+.recommends__list {
+  text-align: left;
+  color: $black;
+  background-color: $white;
+  padding: 35px 0 35px 70px;
+}
+
+.recommends__list:last-child {
+  padding-bottom: 0;
+}
+
+.recommends__item {
+  padding-bottom: 26px;
+}
+
+.recommends__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 28px;
+}
+
+.recommends__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

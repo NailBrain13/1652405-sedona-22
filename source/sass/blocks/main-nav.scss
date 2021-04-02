@@ -1,0 +1,25 @@
+.main-nav {
+  background-color: $blue;
+  text-align: center;
+  color: $white;
+}
+
+.main-nav__item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.main-nav__item:last-child {
+  padding-bottom: 5px;
+}
+
+.main-nav__item:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.main-nav__toogle {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
