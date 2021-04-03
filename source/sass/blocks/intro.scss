@@ -1,7 +1,14 @@
 .intro__img {
+  position: relative;
   height: 390px;
   background-image: url("../img/index/back-mobile.jpg");
   background-repeat: no-repeat;
+
+  & img {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+  }
 }
 
 .intro__wrapper {
@@ -9,10 +16,11 @@
 }
 
 .intro__title {
+  padding: 0 20px 0 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-bottom: 44px;
+  padding-bottom: 15px;
 }
 
 .intro__content {
