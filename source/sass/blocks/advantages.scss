@@ -6,7 +6,7 @@
 .advantages__item {
   background-color: $grey-decor;
 
-  &.advantages__item--full {
+  &--full {
     background-color: $blue;
     color: $white;
   }
