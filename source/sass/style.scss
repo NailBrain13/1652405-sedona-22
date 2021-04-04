@@ -1,5 +1,7 @@
 //Normalize
 @import "global/normalize";
+//Mixin
+@import "global/mixin";
 //Fonts
 @import "global/fonts";
 //Variables
@@ -24,5 +26,7 @@
 @import "blocks/hashtag";
 //Footer
 @import "blocks/footer";
+//Social
+@import "blocks/social";
 //Copyright
 @import "blocks/copyright";
