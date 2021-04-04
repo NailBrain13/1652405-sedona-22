@@ -1,6 +1,7 @@
 .advantages__list {
+  @include list-reset;
   background-color: $blue;
-  padding-top: 49px;
+  padding-top: 45px;
 }
 
 .advantages__item {
@@ -29,6 +30,7 @@
 }
 
 .advantages__description {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
