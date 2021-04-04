@@ -4,6 +4,10 @@
   color: $white;
 }
 
+.main-nav__list {
+  @include list-reset;
+}
+
 .main-nav__item {
   font-weight: 700;
   font-size: 18px;
