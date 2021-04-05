@@ -2,14 +2,14 @@
   height: 390px;
   background-image: url("../img/index/back-mobile.jpg");
   background-repeat: no-repeat;
+}
 
-  & img {
-    margin: 0 20px;
-    padding-top: 90px;
-    padding-bottom: 85px;
-    width: 282px;
-    height: 214px;
-  }
+.intro__img img {
+  margin: 0 20px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  width: 282px;
+  height: 214px;
 }
 
 .intro__wrapper {
