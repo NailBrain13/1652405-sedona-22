@@ -1,0 +1,38 @@
+.advantages__list {
+  @include list-reset;
+  background-color: $blue;
+  padding-top: 45px;
+}
+
+.advantages__item {
+  background-color: $grey-decor;
+
+  &--full {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 35px;
+  padding-bottom: 23px;
+}
+
+.advantages__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 28px;
+}
+
+.advantages__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 24px;
+}

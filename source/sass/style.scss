@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+//Normalize
+@import "global/normalize";
+//Mixin
+@import "global/mixin";
+//Fonts
+@import "global/fonts";
+//Variables
+@import "global/variables";
+//Global
+@import "global/general";
+//Page
+@import "blocks/page";
+//Page-body
+@import "blocks/page-body";
+//Main-nav
+@import "blocks/main-nav";
+//Intro
+@import "blocks/intro";
+//Advantages
+@import "blocks/advantages";
+//Recomends
+@import "blocks/recommends";
+//Registration
+@import "blocks/registration";
+//Hashtag
+@import "blocks/hashtag";
+//Footer
+@import "blocks/page-footer";
+//Social
+@import "blocks/social";
+//Copyright
+@import "blocks/copyright";
