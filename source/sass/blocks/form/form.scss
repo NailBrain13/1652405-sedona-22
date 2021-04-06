@@ -18,14 +18,10 @@
 .form__item {
   padding-bottom: 20px;
 
-  &--radio {
-    padding-bottom: 43px;
-    text-transform: none;
-  }
-
+  &--radio,
   &--checkbox {
-    padding-bottom: 54px;
-    text-transform: none;
+    padding-bottom: 43px;
+    padding-left: 80px;
   }
 }
 
@@ -72,4 +68,10 @@
   border: none;
   background-color: $blue;
   padding: 19px 33px 14px 32px;
+}
+
+.form__required-field {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
 }
