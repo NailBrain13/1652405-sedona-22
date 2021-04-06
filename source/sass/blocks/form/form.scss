@@ -25,6 +25,15 @@
   }
 }
 
+.form__input {
+  background-color: $grey;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 18px 10px 14px 22px;
+}
+
 .form__label {
   color: $grey-controls;
   font-weight: 400;
@@ -37,21 +46,12 @@
   }
 }
 
-.form__input {
-  color: $black;
-  background-color: $grey;
-  border: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  padding: 18px 0 14px 22px;
-}
-
 .form__field {
   width: 278px;
   height: 160px;
   resize: none;
   border: none;
+  color: $black;
   background-color: $grey;
   font-weight: 700;
   font-size: 18px;
