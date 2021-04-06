@@ -1,0 +1,75 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__list {
+  @include list-reset;
+  text-align: start;
+}
+
+.form__item {
+  padding-bottom: 20px;
+
+  &--radio {
+    padding-bottom: 43px;
+    text-transform: none;
+  }
+
+  &--checkbox {
+    padding-bottom: 54px;
+    text-transform: none;
+  }
+}
+
+.form__label {
+  color: $grey-controls;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+
+  &--choice {
+    color: $black;
+    font-weight: 700;
+  }
+}
+
+.form__input {
+  color: $black;
+  background-color: $grey;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 18px 0 14px 22px;
+}
+
+.form__field {
+  width: 278px;
+  height: 160px;
+  resize: none;
+  border: none;
+  background-color: $grey;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 13px 23px 29px 21px;
+  margin-bottom: 51px;
+}
+
+.form__button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+  border: none;
+  background-color: $blue;
+  padding: 19px 33px 14px 32px;
+}
