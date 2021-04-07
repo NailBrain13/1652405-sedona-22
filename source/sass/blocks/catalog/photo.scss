@@ -1,0 +1,49 @@
+.photo__list {
+  @include list-reset;
+  text-align: start;
+}
+
+.photo__item {
+  padding: 22px 0 15px 0;
+  border-bottom: 2px solid $grey-hover;
+
+  &:first-child {
+    border-top: 2px solid $grey-hover;
+  }
+}
+
+.photo__wrapper {
+  padding: 0 20px;
+}
+
+.photo__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 11px;
+}
+
+.photo__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo__likes {
+  position: relative;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/catalog/like-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
