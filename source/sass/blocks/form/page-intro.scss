@@ -1,0 +1,28 @@
+.page-intro__img {
+  height: 160px;
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.page-intro__img img {
+  width: 229px;
+  height: 39px;
+  transform: translate(50px, 50px);
+}
+
+.page-intro__wrapper {
+  margin: 36px 20px 16px 20px;
+}
+
+.page-intro__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.page-intro__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}

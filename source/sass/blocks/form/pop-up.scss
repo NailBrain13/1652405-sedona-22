@@ -1,0 +1,26 @@
+.pop-up__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.pop-up__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pop-up__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white;
+  border: none;
+  background-color: $blue;
+  padding: 18px 64px 14px 64px;
+}
+
+.pop-up__wrapper-btn {
+  background-color: $grey;
+  padding: 20px 20px;
+}
