@@ -1,0 +1,27 @@
+.photo {
+  margin: 0 20px;
+}
+
+.photo__list {
+  @include list-reset;
+  text-align: start;
+}
+
+.photo__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.photo__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo__likes {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
