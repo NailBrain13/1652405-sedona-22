@@ -2,10 +2,21 @@
   background-color: $blue;
   text-align: center;
   color: $white;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    color: $black;
+  }
 }
 
 .main-nav__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item {

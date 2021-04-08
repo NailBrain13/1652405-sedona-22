@@ -1,9 +1,22 @@
+.recommends {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+}
+
 .recommends__list {
   @include list-reset;
   text-align: left;
   color: $black;
   background-color: $white;
   padding: 35px 0 35px 70px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .recommends__title {

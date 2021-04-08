@@ -1,5 +1,10 @@
 .registration {
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 500px;
+  }
 }
 
 .registration__wrapper {
