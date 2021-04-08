@@ -35,6 +35,13 @@
 
 .main-nav__toogle {
   display: block;
+  position: relative;
+  right: -90%;
+  top: 20px;
   width: 20px;
   height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

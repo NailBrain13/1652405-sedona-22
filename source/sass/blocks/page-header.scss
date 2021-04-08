@@ -5,4 +5,9 @@
 
 .page-header__logo {
   position: absolute;
+  right: 40%;
+
+  @media (min-width: $tablet-width) {
+    left: 45%;
+  }
 }

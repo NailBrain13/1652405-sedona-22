@@ -1,14 +1,27 @@
 .intro__img {
   height: 390px;
-  width: 100%;
+  width: auto;
   background-image: url("../img/index/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-desktop.jpg");
+    height: 518px;
+    background-size: cover;
+  }
 }
 
 .intro__img img {
   transform: translate(20px, 80px);
   width: 282px;
   height: 214px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .intro__wrapper {
