@@ -1,10 +1,25 @@
+.recommends {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+}
+
 .recommends__list {
   @include list-reset;
   text-align: left;
   color: $black;
   background-color: $white;
   padding: 35px 0 35px 70px;
+  height: 416px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    height: 330px;
+  }
 }
+
 
 .recommends__title {
   font-weight: 700;

@@ -1,3 +1,14 @@
 .social__list {
   @include list-reset;
+  display: flex;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
 }

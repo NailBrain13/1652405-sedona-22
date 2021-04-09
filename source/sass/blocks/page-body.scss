@@ -1,9 +1,19 @@
 .page-body {
   font-family: "PT Sans", "Arial", sans-serif;
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   min-height: 100%;
-  width: $mobile-width;
+  min-width: $mobile-width;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
