@@ -11,13 +11,15 @@
   color: $black;
   background-color: $white;
   padding: 35px 0 35px 70px;
+  height: 416px;
 
   @media (min-width: $tablet-width) {
-    min-height: 330px;
     display: flex;
     justify-content: space-between;
+    height: 330px;
   }
 }
+
 
 .recommends__title {
   font-weight: 700;
