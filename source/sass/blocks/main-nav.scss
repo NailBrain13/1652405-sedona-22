@@ -10,6 +10,15 @@
   }
 }
 
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 692px;
+    padding-left: 69px;
+    padding-right: 27px;
+  }
+}
+
 .main-nav__list {
   @include list-reset;
 
@@ -33,7 +42,7 @@
   padding-bottom: 16px;
 }
 
-.main-nav__toogle {
+.main-nav__toggle {
   display: block;
   position: relative;
   right: -90%;
