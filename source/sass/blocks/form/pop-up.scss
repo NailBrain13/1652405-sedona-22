@@ -1,3 +1,21 @@
+.pop-up {
+  margin: 0 auto;
+  width: 370px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: $shadow-popup;
+    width: 650px;
+    height: 347px;
+
+    &--fail {
+      padding-top: 70px;
+      width: 400px;
+      height: 347px;
+    }
+  }
+}
+
 .pop-up__title {
   font-weight: 700;
   font-size: 18px;
