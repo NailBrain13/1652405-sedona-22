@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Обратная связь</title>
 </head>
@@ -10,7 +11,7 @@
 <body class="page-body">
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toogle" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
@@ -58,7 +59,7 @@
       <h2 class="visually-hidden">Форма</h2>
       <div class="feedback__wrapper">
         <form class="form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--name">
             <p class="form__title">Представьтесь:</p>
 
             <ul class="form__list">
@@ -83,10 +84,10 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--contacts">
             <p class="form__title">Контактная информация:</p>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--contacts">
               <li class="form__item">
                 <label class="form__label" for="user-phone">
                   Контактный телефон <sup>*</sup> :
@@ -102,7 +103,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--impression">
             <p class="form__title">Ваше общее впечатление:</p>
 
             <ul class="form__list">
@@ -121,10 +122,10 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--places">
             <p class="form__title">Посещенные достопримечательности:</p>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--places">
               <li class="form__item form__item--checkbox">
                 <input class="form__checkbox" type="checkbox" name="devil-bridge" id="bridge" checked />
                 <label class="form__label form__label--choice" for="bridge">Мост Дьявола</label>
@@ -144,48 +145,50 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--emotions">
             <p class="form__title">Опишите свои эмоции:</p>
 
             <textarea class="form__field" id="emotions" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все ваши восторги"></textarea>
           </fieldset>
 
-          <button class="form__button button" type="submit">
-            Отпрваить отзыв
-          </button>
-          <p class="form__required-field"><sup>*</sup> - обязательные поля</p>
+          <div class="form__fieldset form__fieldset--btn">
+            <button class="form__button button" type="submit">
+              Отправить отзыв
+            </button>
+            <p class="form__required-field"><sup>*</sup> - обязательные поля</p>
+          </div>
         </form>
       </div>
-    </section>
+      <!--Скрытые части-->
 
-    <!--Скрытые части-->
-
-    <section class="pop-up pop-up--fail">
-      <div class="pop-up__wrapper">
-        <h3 class="visually-hidden">Ошибка формы</h3>
-        <p class="pop-up__title">Что-то пошло не так !</p>
-        <p class="pop-up__content">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их
-          заполнить
-        </p>
-        <button class="pop-up__button button" type="button">Ок</button>
-      </div>
-    </section>
-
-    <section class="pop-up pop-up--success">
-      <div class="pop-up__wrapper">
-        <h3 class="visually-hidden">Успешная отправка формы</h3>
-        <p class="pop-up__title">Ваш отзыв отправлен!</p>
-        <p class="pop-up__content">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
-        </p>
-        <div class="pop-up__wrapper-btn">
-          <button class="pop-up__button button" type="button">
-            Закрыть окно
-          </button>
+      <section class="pop-up pop-up--fail">
+        <div class="pop-up__wrapper">
+          <h3 class="visually-hidden">Ошибка формы</h3>
+          <p class="pop-up__title">Что-то пошло не так !</p>
+          <p class="pop-up__content">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их
+            заполнить
+          </p>
+          <button class="pop-up__button button" type="button">Ок</button>
         </div>
-      </div>
+      </section>
+
+      <section class="pop-up pop-up--success">
+        <div class="pop-up__wrapper">
+          <h3 class="visually-hidden">Успешная отправка формы</h3>
+          <p class="pop-up__title">Ваш отзыв отправлен!</p>
+          <p class="pop-up__content">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
+          </p>
+          <div class="pop-up__wrapper-btn">
+            <button class="pop-up__button button" type="button">
+              Закрыть окно
+            </button>
+          </div>
+        </div>
+      </section>
     </section>
+
   </main>
 
   <footer class="page-footer">
@@ -196,13 +199,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#!">twitter</a>
+            <a class="social__link social__link--twitter" href="#!"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#!">facebook</a>
+            <a class="social__link social__link--facebook" href="#!"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#!">youtube</a>
+            <a class="social__link social__link--youtube" href="#!"></a>
           </li>
         </ul>
       </div>

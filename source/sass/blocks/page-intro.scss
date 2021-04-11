@@ -1,18 +1,30 @@
 .page-intro__img {
   height: 160px;
+  padding-top: 53px;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 97px;
+    height: 288px;
+  }
 }
 
 .page-intro__img img {
+  margin: 0 auto;
   width: 229px;
   height: 39px;
-  transform: translate(50px, 50px);
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
 }
 
 .page-intro__wrapper {
-  margin: 36px 20px 16px 20px;
+  margin: 36px auto 16px auto;
 }
 
 .page-intro__title {

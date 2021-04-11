@@ -1,0 +1,20 @@
+.feedback {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 650px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
