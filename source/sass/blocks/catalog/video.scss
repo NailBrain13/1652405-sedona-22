@@ -29,13 +29,11 @@
 
 .video__panel {
   position: absolute;
-  bottom: 3px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $blue;
   width: 320px;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $blue;
   display: grid;
   gap: 10px;
   grid-template-columns: min-content 1fr min-content min-content;

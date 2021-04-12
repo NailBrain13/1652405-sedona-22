@@ -4,8 +4,8 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-width - 100px) {
-    padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,16 +21,15 @@
     border-top: 2px solid $grey-hover;
   }
 
-  @media (min-width: $mobile-width + 1px) {
-    border: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
 
     &:first-child {
-      border: 0;
+      border: none;
     }
-  }
 
-
-  @media (min-width: $tablet-width - 50px) {
     flex-basis: 50%;
 
     &--full {
@@ -39,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 33%;
+    flex-basis: 33.3%;
 
     &--full {
       flex-basis: 100%;
@@ -51,7 +50,7 @@
   position: relative;
   padding: 0 20px;
 
-  @media (min-width: $mobile-width + 100px) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -100,14 +99,6 @@
     background-image: url("../img/catalog/like-icon.svg");
     background-repeat: no-repeat;
   }
-}
-
-.photo__likes-btn {
-  display: block;
-  width: 23px;
-  height: 21px;
-  background-color: transparent;
-  border: none;
 }
 
 .photo__desc {
