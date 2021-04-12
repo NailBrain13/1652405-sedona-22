@@ -1,4 +1,5 @@
 .video {
+  position: relative;
   width: auto;
 }
 
@@ -7,6 +8,10 @@
     width: 648px;
     height: 500px;
     object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
   }
 }
 
@@ -20,4 +25,26 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+}
+
+.video__panel {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $blue;
+  width: 320px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: min-content 1fr min-content min-content;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
