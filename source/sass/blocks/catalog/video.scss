@@ -1,3 +1,20 @@
+.video {
+  position: relative;
+  width: auto;
+}
+
+.video__content {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
 .video__title {
   font-weight: 700;
   font-size: 18px;
@@ -8,4 +25,24 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+}
+
+.video__panel {
+  position: absolute;
+  width: 320px;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $blue;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: min-content 1fr min-content min-content;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
