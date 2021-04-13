@@ -5,12 +5,12 @@
   align-items: center;
 }
 
-.social__item {
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $blue;
-
-  &:not(:last-child) {
-    margin-right: 6px;
-  }
+  margin-right: 6px;
 }
