@@ -1,3 +1,26 @@
+.advantages {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/triangle-reverse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
 .advantages__list {
   @include list-reset;
   background-color: $blue;
@@ -10,7 +33,17 @@
 }
 
 .advantages__item {
+  margin: 0 auto;
+  width: 100%;
   background-color: $grey-decor;
+
+  &--small:not(:last-child) {
+    border-bottom: 1px solid $decor-line;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
 
   &--full {
     background-color: $blue;
@@ -48,7 +81,8 @@
 }
 
 .advantages__description {
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;

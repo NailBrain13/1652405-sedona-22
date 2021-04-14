@@ -16,10 +16,65 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding: 158px 31px 60px 36px;
     height: 330px;
   }
 }
 
+
+.recommends__item {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+
+    &--souvenir {
+      order: 3;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -48px;
+    width: 32px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 72px;
+      top: -90px;
+      left: 90px;
+    }
+  }
+
+  &--house::before {
+    background-image: url("../img/icons/index-icons/icon-house.svg");
+
+    @media (min-width: $desktop-width) {
+      left: 155px;
+    }
+  }
+
+  &--souvenir::before {
+    background-image: url("../img/icons/index-icons/icon-gift.svg");
+
+    @media (min-width: $desktop-width) {
+      left: 135px;
+    }
+  }
+
+  &--food::before {
+    background-image: url("../img/icons/index-icons/icon-burger.svg");
+
+    @media (min-width: $desktop-width) {
+      left: 161px;
+    }
+  }
+}
 
 .recommends__title {
   font-weight: 700;
