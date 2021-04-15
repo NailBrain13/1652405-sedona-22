@@ -88,14 +88,14 @@
             <p class="form__title">Контактная информация:</p>
 
             <ul class="form__list form__list--contacts">
-              <li class="form__item">
-                <label class="form__label" for="user-phone">
+              <li class="form__item form__item--contacts">
+                <label class="form__label form__label-contacts form__label-contacts--phone" for="user-phone">
                   Контактный телефон <sup>*</sup> :
                   <input class="form__input form__input--phone" type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон" required />
                 </label>
               </li>
-              <li class="form__item">
-                <label class="form__label" for="user-email">
+              <li class="form__item form__item--contacts">
+                <label class="form__label form__label-contacts form__label-contacts--email" for="user-email">
                   Электронная почта <sup>*</sup> :
                   <input class="form__input form__input--email" type="email" name="user-email" id="user-email" placeholder="Введите email" required />
                 </label>
@@ -106,7 +106,7 @@
           <fieldset class="form__fieldset form__fieldset--impression">
             <p class="form__title">Ваше общее впечатление:</p>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--radio">
               <li class="form__item form__item--radio">
                 <input class="form__radio visually-hidden" type="radio" name="impression-value" value="positive" id="positive" checked />
                 <label class="form__label form__label--choice" for="positive">Скорее положительное</label>
