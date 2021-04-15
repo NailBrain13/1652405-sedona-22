@@ -4,6 +4,7 @@
 }
 
 .form__fieldset {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
@@ -17,13 +18,11 @@
     &--contacts {
       grid-column: 1/3;
       grid-row: 2/3;
-      border-top: 1px solid $grey-border-form;
     }
 
     &--impression {
       grid-column: 1/2;
       grid-row: 1/2;
-      border-right: 1px solid $grey-border-form;
     }
 
     &--places {
@@ -34,7 +33,6 @@
     &--emotions {
       grid-column: 1/3;
       grid-row: 4/5;
-      border-top: 1px solid $grey-border-form;
     }
 
     &--btn {
@@ -227,5 +225,111 @@
 
   &--email::before {
     background-image: url("../img/form/mail.svg");
+  }
+}
+
+.form__item .form__label--inline {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.form__item--contacts .form__label--contacts {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.form__label-contacts--phone,
+.form__label-contacts--email {
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
+}
+
+.form__item--contacts .form__label-contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.form__text {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form__text-short {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: initial;
+  }
+}
+
+.form__title--border {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 123px;
+      top: 10px;
+      right: 0;
+      background-color: $grey-border-form;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 123px;
+      top: 10px;
+      left: 0;
+      background-color: $grey-border-form;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 280px;
+      top: 10px;
+      right: 0;
+      background-color: $grey-border-form;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 280px;
+      top: 10px;
+      left: 0;
+      background-color: $grey-border-form;
+    }
+  }
+}
+
+.form__fieldset--impression .form__title {
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      height: 292px;
+      width: 1px;
+      top: 10px;
+      right: 0;
+      background-color: $grey-border-form;
+    }
   }
 }

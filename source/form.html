@@ -64,20 +64,20 @@
 
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label" for="name">
-                  Имя<sup>*</sup>:
+                <label class="form__label form__label--inline" for="name">
+                  <span>Имя<sup>*</sup>:</span>
                   <input class="form__input" type="text" name="name" id="name" placeholder="Петр" required />
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="surname">
-                  Фамилия<sup>*</sup>:
+                <label class="form__label form__label--inline" for="surname">
+                  <span>Фамилия<sup>*</sup>:</span>
                   <input class="form__input" type="text" name="surname" id="surname" placeholder="Иванов" required />
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="patronymic">
-                  Отчество:
+                <label class="form__label form__label--inline" for="patronymic">
+                  <span>Отчество:</span>
                   <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович" />
                 </label>
               </li>
@@ -85,18 +85,19 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <p class="form__title">Контактная информация:</p>
+            <p class="form__title form__title--border">Контактная информация:</p>
 
             <ul class="form__list form__list--contacts">
               <li class="form__item form__item--contacts">
                 <label class="form__label form__label-contacts form__label-contacts--phone" for="user-phone">
-                  Контактный телефон <sup>*</sup> :
+                  <span class="form__text">Контактный телефон <sup>*</sup>:</span>
+                  <span class="form__text-short">Телефон<sup>*</sup>:</span>
                   <input class="form__input form__input--phone" type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон" required />
                 </label>
               </li>
               <li class="form__item form__item--contacts">
                 <label class="form__label form__label-contacts form__label-contacts--email" for="user-email">
-                  Электронная почта <sup>*</sup> :
+                  <span>Электронная почта <sup>*</sup>:</span>
                   <input class="form__input form__input--email" type="email" name="user-email" id="user-email" placeholder="Введите email" required />
                 </label>
               </li>
@@ -146,7 +147,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--emotions">
-            <p class="form__title">Опишите свои эмоции:</p>
+            <p class="form__title form__title--border">Опишите свои эмоции:</p>
 
             <textarea class="form__field" id="emotions" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все ваши восторги"></textarea>
           </fieldset>
