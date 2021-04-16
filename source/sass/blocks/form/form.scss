@@ -136,10 +136,6 @@
     font-weight: 700;
   }
 
-  & span {
-    padding-right: 16px;
-  }
-
   &.form__label--contacts {
     position: relative;
 
@@ -181,6 +177,10 @@
       background-image: url("../img/form/mail.svg");
     }
   }
+}
+
+.form__sub-tittle {
+  padding-right: 16px;
 }
 
 .form__field {
