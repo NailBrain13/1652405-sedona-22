@@ -1,5 +1,6 @@
 .feedback {
   position: relative;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
@@ -8,7 +9,7 @@
 
 .feedback__wrapper {
   margin: 0 auto;
-  width: 280px;
+  width: auto;
 
   @media (min-width: $tablet-width) {
     width: 650px;

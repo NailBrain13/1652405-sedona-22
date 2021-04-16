@@ -6,10 +6,24 @@
 .form__fieldset {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: none;
 
+  &--places,
+  &--impression,
+  &--contacts {
+    border-bottom: 1px solid $grey-hover;
+  }
+
+  &--name {
+    border-bottom: 1px solid $grey-hover;
+    border-top: 1px solid $grey-hover;
+  }
+
   @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+
     &--name {
       grid-column: 2/3;
       padding-left: 58px;
