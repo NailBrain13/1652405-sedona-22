@@ -49,6 +49,68 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  .form__fieldset--impression & {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        height: 292px;
+        width: 1px;
+        top: 10px;
+        right: 0;
+        background-color: $grey-border-form;
+      }
+    }
+  }
+
+  &--border {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        top: 10px;
+        right: 0;
+        background-color: $grey-border-form;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        top: 10px;
+        left: 0;
+        background-color: $grey-border-form;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 280px;
+        top: 10px;
+        right: 0;
+        background-color: $grey-border-form;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 280px;
+        top: 10px;
+        left: 0;
+        background-color: $grey-border-form;
+      }
+    }
+  }
 }
 
 .form__list {
@@ -84,19 +146,6 @@
 .form__item {
   padding-bottom: 20px;
 
-  & .form__label {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  & .form__label--inline {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
   &--radio,
   &--checkbox {
     padding-bottom: 43px;
@@ -131,20 +180,26 @@
   font-size: 14px;
   line-height: 26px;
 
+  .form__item & {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .form__item &--inline {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   &--choice {
     color: $black;
     font-weight: 700;
   }
 
-  &.form__label--contacts {
+  &--contacts {
     position: relative;
-
-    &.form__label--contacts-phone,
-    &.form__label--contacts-email {
-      @media (min-width: $desktop-width) {
-        align-items: center;
-      }
-    }
 
     @media (min-width: $desktop-width) {
       display: flex;
@@ -168,14 +223,14 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
 
-    &.form__label--contacts-phone::before {
-      background-image: url("../img/form/phone.svg");
-    }
+  &--contacts-phone::before {
+    background-image: url("../img/form/phone.svg");
+  }
 
-    &.form__label--contacts-email::before {
-      background-image: url("../img/form/mail.svg");
-    }
+  &--contacts-email::before {
+    background-image: url("../img/form/mail.svg");
   }
 }
 
@@ -274,67 +329,5 @@
 
   @media (min-width: $desktop-width) {
     display: initial;
-  }
-}
-
-.form__title--border {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 123px;
-      top: 10px;
-      right: 0;
-      background-color: $grey-border-form;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 123px;
-      top: 10px;
-      left: 0;
-      background-color: $grey-border-form;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 280px;
-      top: 10px;
-      right: 0;
-      background-color: $grey-border-form;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 280px;
-      top: 10px;
-      left: 0;
-      background-color: $grey-border-form;
-    }
-  }
-}
-
-.form__fieldset--impression .form__title {
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      height: 292px;
-      width: 1px;
-      top: 10px;
-      right: 0;
-      background-color: $grey-border-form;
-    }
   }
 }
