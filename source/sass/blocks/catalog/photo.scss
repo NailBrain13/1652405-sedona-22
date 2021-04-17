@@ -97,6 +97,7 @@
 .photo__likes-btn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .photo__likes-btn-icon {
@@ -106,11 +107,6 @@
       opacity: 1;
     }
   }
-}
-
-.photo__likes-btn path:hover,
-.photo__likes-btn path:active {
-  fill: red;
 }
 
 .photo__desc {
