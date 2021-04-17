@@ -14,7 +14,7 @@
 }
 
 .photo__item {
-  padding: 22px 0 15px 0;
+  padding: 20px 20px;
   border-bottom: 2px solid $grey-hover;
 
   &:first-child {
@@ -80,8 +80,7 @@
 }
 
 .photo__likes {
-  position: relative;
-  padding-left: 40px;
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -90,15 +89,28 @@
   grid-row: 1/3;
   grid-column: 2/3;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 23px;
-    height: 21px;
-    background-image: url("../img/catalog/like-icon.svg");
-    background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
   }
+}
+
+.photo__likes-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.photo__likes-btn-icon {
+  @media (min-width: $desktop-width) {
+    & path {
+      fill: white;
+      opacity: 1;
+    }
+  }
+}
+
+.photo__likes-btn path:hover,
+.photo__likes-btn path:active {
+  fill: red;
 }
 
 .photo__desc {
