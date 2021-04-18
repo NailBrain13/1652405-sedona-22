@@ -1,13 +1,38 @@
 .video {
   position: relative;
   width: auto;
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
+}
+
+.video__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 416px;
+  }
 }
 
 .video__content {
+  margin-bottom: 80px;
+  width: 100%;
+  object-fit: cover;
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     width: 648px;
     height: 500px;
-    object-fit: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +44,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__text {
@@ -29,17 +58,21 @@
 
 .video__panel {
   position: absolute;
-  width: 320px;
-  bottom: 4px;
+  width: 280px;
+  height: 111px;
+  bottom: 17px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: $blue;
+  background: rgba($black, 0.6);
   display: grid;
-  gap: 10px;
-  grid-template-columns: min-content 1fr min-content min-content;
+  grid-template-columns: auto;
 
   @media (min-width: $tablet-width) {
+    bottom: 3px;
     width: 648px;
+    height: 93px;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content max-content;
   }
 
   @media (min-width: $desktop-width) {

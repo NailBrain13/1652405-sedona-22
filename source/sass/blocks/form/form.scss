@@ -64,6 +64,10 @@
   font-size: 18px;
   line-height: 26px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
   .form__fieldset--impression & {
     &::before {
       @media (min-width: $tablet-width) {
