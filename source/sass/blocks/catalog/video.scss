@@ -1,6 +1,15 @@
 .video {
   position: relative;
   width: auto;
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
 }
 
 .video__wrapper {

@@ -11,16 +11,14 @@
 }
 
 .page-footer__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  vertical-align: middle;
   padding-top: 38px;
 
   @media (min-width: $tablet-width) {
     padding: 36px 0 0;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     width: 648px;
   }
@@ -36,4 +34,8 @@
 
 .page-footer__social {
   padding-bottom: 45px;
+}
+
+.page-footer__copyright {
+  align-self: flex-start;
 }
