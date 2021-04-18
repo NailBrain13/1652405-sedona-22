@@ -101,11 +101,12 @@
 }
 
 .photo__likes-btn-icon {
+  fill: $black;
+  opacity: 0.3;
+
   @media (min-width: $desktop-width) {
-    & path {
-      fill: white;
-      opacity: 1;
-    }
+    fill: $white;
+    opacity: 1;
   }
 }
 
