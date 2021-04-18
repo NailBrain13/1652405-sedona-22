@@ -16,6 +16,10 @@
   font-size: 21px;
   line-height: 26px;
   margin: 33px 0 21px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .registration__content {

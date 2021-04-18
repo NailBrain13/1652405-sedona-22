@@ -71,6 +71,10 @@
   line-height: 26px;
   padding-top: 35px;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__number {
