@@ -48,7 +48,16 @@
 }
 
 .page-intro__wrapper {
+  padding: 0 20px;
   margin: 36px auto 16px auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 410px;
+  }
 }
 
 .page-intro__title {

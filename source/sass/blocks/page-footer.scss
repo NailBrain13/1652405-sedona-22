@@ -5,6 +5,10 @@
     padding: 0 20px;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 104px 0 121px;
+  }
 }
 
 .page-footer__wrapper {
@@ -17,6 +21,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin: 0 auto;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 

@@ -3,6 +3,18 @@
   width: auto;
 }
 
+.video__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 416px;
+  }
+}
+
 .video__content {
   margin-bottom: 80px;
   width: 100%;
