@@ -91,3 +91,16 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+.advantages__img {
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
+}
+
+.advantages__img-content {
+  height: 100%;
+  width: 100%;
+}
