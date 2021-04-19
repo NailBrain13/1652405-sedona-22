@@ -8,7 +8,15 @@
 }
 
 .registration__wrapper {
-  margin: 0 20px;
+  padding: 33px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .registration__title {
@@ -30,9 +38,9 @@
 }
 
 .registration__button {
+  width: 280px;
   display: inline-block;
   padding: 15px 32px 18px 32px;
-  margin: 13px 0 49px 0;
   background-color: $blue;
   color: $white;
   font-weight: 700;
@@ -41,5 +49,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 15px 121px 18px 121px;
+    width: 458px;
   }
 }
