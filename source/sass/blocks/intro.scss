@@ -8,6 +8,10 @@
   padding-top: 90px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/back-mobile@2x.jpg");
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -25,6 +29,10 @@
     height: 518px;
     background-size: cover;
     padding-top: 77px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
 
     &::after {
       height: 60px;
