@@ -17,3 +17,10 @@
     left: auto;
   }
 }
+
+.page-header__logo-img {
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
+}
