@@ -5,7 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Седона</title>
 </head>
 
 <body class="page-body">
@@ -34,7 +40,10 @@
     </nav>
 
     <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84" />
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <img class="page-header__logo-img" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84" />
+      </picture>
     </a>
   </header>
 
@@ -60,7 +69,7 @@
       <h2 class="visually-hidden">Список достоинств</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--full">
-          <div class="advantages__content">
+          <div class="advantages__content advantages__content--full">
             <h3 class="advantages__title">Настоящий город</h3>
             <p class="advantages__number">— №1 —</p>
             <p class="advantages__description">
@@ -68,7 +77,11 @@
             </p>
           </div>
           <div class="advantages__img">
-            <img src="https://via.placeholder.com/520x260" alt="Улицы Седоны" width="520" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/desktop/photo-city-desktop.jpg 1x, img/index/desktop/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/tab/photo-city-tab.jpg 1x, img/index/tab/photo-city-tab@2x.jpg 2x">
+              <img class="advantages__img-content" src="img/index/mobile/photo-city-mobile.jpg" srcset="img/index/mobile/photo-city-mobile@2x.jpg 2x" alt="Улицы Седоны" width="520" height="260" />
+            </picture>
           </div>
         </li>
 
@@ -96,7 +109,7 @@
         </li>
 
         <li class="advantages__item advantages__item--full advantages__item--full-reverse">
-          <div class="advantages__content">
+          <div class="advantages__content advantages__content--full-reverse">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__description">
@@ -104,7 +117,11 @@
             </p>
           </div>
           <div class="advantages__img">
-            <img src="https://via.placeholder.com/520x260" alt="Мост Дьявола" width="520" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/desktop/photo-bridge-desktop.jpg 1x, img/index/desktop/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/tab/photo-bridge-tab.jpg 1x, img/index/tab/photo-bridge-tab@2x.jpg 2x">
+              <img class="advantages__img-content" src="img/index/mobile/photo-bridge-mobile.jpg" srcset="img/index/mobile/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола" width="520" height="260" />
+            </picture>
           </div>
         </li>
 

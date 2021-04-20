@@ -8,6 +8,10 @@
   padding-top: 90px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/back-mobile@2x.jpg");
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -25,6 +29,10 @@
     height: 518px;
     background-size: cover;
     padding-top: 77px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
 
     &::after {
       height: 60px;
@@ -51,14 +59,14 @@
 }
 
 .intro__wrapper {
-  padding: 0 20px;
+  padding: 32px 20px 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 124px;
+    padding: 44px 124px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 358px;
+    padding: 55px 358px 41px;
   }
 }
 

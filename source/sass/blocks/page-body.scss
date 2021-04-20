@@ -15,5 +15,6 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    box-shadow: $shadow-desktop;
   }
 }
