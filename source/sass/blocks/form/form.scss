@@ -76,7 +76,7 @@
         height: 292px;
         width: 1px;
         top: 10px;
-        right: 0;
+        right: -30px;
         background-color: $grey-border-form;
       }
     }
@@ -167,10 +167,17 @@
   &--radio,
   &--checkbox {
     padding-bottom: 43px;
-    padding-left: 80px;
+    padding-left: 60px;
+  }
 
+  &--checkbox {
     @media (min-width: $tablet-width) {
-      padding-left: 90px;
+
+      padding-left: 150px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 60px;
     }
   }
 }
