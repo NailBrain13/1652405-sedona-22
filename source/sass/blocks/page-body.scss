@@ -7,6 +7,7 @@
   min-height: 100%;
   min-width: $mobile-width;
   display: grid;
+  background-color: $video-player-panel-bottom;
   grid-template-rows: min-content 1fr min-content;
 
   @media (min-width: $tablet-width) {
