@@ -278,6 +278,15 @@
   border: none;
   background-color: $blue;
   padding: 19px 33px 14px 32px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
 
 .form__required-field {
