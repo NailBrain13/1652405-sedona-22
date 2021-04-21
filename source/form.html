@@ -5,6 +5,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <title>Обратная связь</title>
 </head>
 
@@ -24,7 +30,7 @@
             <a href="catalog.html"> Фото и видео </a>
           </li>
           <li class="main-nav__item">
-            <a> Форма отзыва </a>
+            <a href="#!"> Форма отзыва </a>
           </li>
           <li class="main-nav__item">
             <a href="#!"> HTML ACADEMY </a>
@@ -33,8 +39,11 @@
       </div>
     </nav>
 
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84" />
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <img class="page-header__logo-img" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84" />
+      </picture>
     </a>
   </header>
 
@@ -124,7 +133,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--places">
-            <p class="form__title form__title--border">Посещенные достопримечательности:</p>
+            <p class="form__title form__title--border">Посещенные <br> достопримечательности:</p>
 
             <ul class="form__list form__list--places">
               <li class="form__item form__item--checkbox">
