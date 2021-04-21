@@ -28,15 +28,32 @@
   margin-bottom: 80px;
   width: 100%;
   object-fit: cover;
+  background-image: url("../img/catalog/mobile/video-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/mobile/video-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     width: 648px;
     height: 500px;
+    background-image: url("../img/catalog/tab/video-tab.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/tab/video-tab@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    background-image: url("../img/catalog/desktop/video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/desktop/video-desktop@2x.jpg");
+    }
   }
 }
 

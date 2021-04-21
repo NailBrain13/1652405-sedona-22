@@ -64,7 +64,11 @@
         <li class="photo__item photo__item--full">
           <div class="photo__wrapper">
             <a class="photo__image" href="#!">
-              <img src="img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="Закат на дороге">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/desktop/photo-1-desktop.jpg 1x, img/catalog/desktop/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/tab/photo-1-tab.jpg 1x, img/catalog/tab/photo-1-tab@2x.jpg 2x">
+                <img src="img/catalog/mobile/photo-1-mobile.jpg" srcset="img/catalog/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Закат на дороге">
+              </picture>
             </a>
             <div class="photo__desc">
               <p class="photo__title">Народные просторы</p>
@@ -84,7 +88,11 @@
         <li class="photo__item">
           <div class="photo__wrapper">
             <a class="photo__image" href="#!">
-              <img src="img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Кактус">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/desktop/photo-2-desktop.jpg 1x, img/catalog/desktop/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/tab/photo-2-tab.jpg 1x, img/catalog/tab/photo-2-tab@2x.jpg 2x">
+                <img src="img/catalog/mobile/photo-2-mobile.jpg" srcset="img/catalog/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус">
+              </picture>
             </a>
             <div class="photo__desc">
               <p class="photo__title">Местная растительность</p>
@@ -104,7 +112,11 @@
         <li class="photo__item">
           <div class="photo__wrapper">
             <a class="photo__image" href="#!">
-              <img src="img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/desktop/photo-3-desktop.jpg 1x, img/catalog/desktop/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/tab/photo-3-tab.jpg 1x, img/catalog/tab/photo-3-tab@2x.jpg 2x">
+                <img src="img/catalog/mobile/photo-3-mobile.jpg" srcset="img/catalog/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горная дорога">
+              </picture>
             </a>
             <div class="photo__desc">
               <p class="photo__title">Дорога на север</p>
@@ -124,7 +136,11 @@
         <li class="photo__item">
           <div class="photo__wrapper">
             <a class="photo__image" href="#!">
-              <img src="img/catalog/photo-4-desktop1.jpg" width="280" height="280" alt="Панорама гор">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/desktop/photo-4-desktop.jpg 1x, img/catalog/desktop/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/tab/photo-4-tab.jpg 1x, img/catalog/tab/photo-4-tab@2x.jpg 2x">
+                <img src="img/catalog/mobile/photo-4-mobile.jpg" srcset="img/catalog/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Панорама гор">
+              </picture>
             </a>
             <div class="photo__desc">
               <p class="photo__title">Мост дьявола</p>
@@ -154,7 +170,7 @@
         </p>
       </div>
 
-      <video class="video__content" src="#!" poster="img/catalog/video-mobile.jpg" width="320" height="200"></video>
+      <video class="video__content" src="#!" width="320" height="200"></video>
 
       <!--Кнопки управления для кастомизацнии-->
       <div class="video__panel control">
