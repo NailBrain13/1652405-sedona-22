@@ -31,6 +31,10 @@
     justify-content: space-between;
     padding-bottom: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+  }
 }
 
 .main-nav__item {
@@ -46,22 +50,6 @@
     padding-top: 15px;
     font-size: 14px;
     line-height: 26px;
-  }
-
-  &:last-child {
-    padding-bottom: 5px;
-    background: $shadow-menu;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 7px;
-
-    @media (min-width: $tablet-width) {
-      background: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
 
     &:nth-child(2) {
       padding-left: 24px;
@@ -70,8 +58,31 @@
     &:nth-child(3) {
       margin-left: 160px;
     }
+
+    &:last-child {
+      padding-bottom: 5px;
+      background: $shadow-menu;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100% 7px;
+
+      @media (min-width: $tablet-width) {
+        background: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      padding-left: 20px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 240px;
+    }
   }
 }
+
 
 .main-nav__toggle {
   display: block;

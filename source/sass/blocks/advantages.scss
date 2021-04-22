@@ -49,6 +49,10 @@
       padding-top: 20px;
       padding-bottom: 32px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 50px;
+    }
   }
 
   &--small:not(:last-child) {
@@ -108,11 +112,17 @@
 
   @media (min-width: $desktop-width) {
     &--full {
-      padding-left: 72px;
+      width: 400px;
+      padding-top: 28px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
 
     &--full-reverse {
-      padding-right: 48px;
+      width: 400px;
+      padding-top: 30px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
   }
 }
@@ -125,6 +135,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+  }
+
+  &--small {
+    @media (min-width: $desktop-width) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
   }
 }
 

@@ -40,6 +40,10 @@
     padding-top: 10px;
     padding-right: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 10px;
+  }
 }
 
 .page-footer__copyright {
@@ -49,5 +53,9 @@
   @media (min-width: $tablet-width) {
     padding-top: 5px;
     padding-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 25px;
   }
 }
