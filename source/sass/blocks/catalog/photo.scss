@@ -14,7 +14,6 @@
 }
 
 .photo__item {
-  width: 100%;
   padding: 20px 0;
   border-bottom: 2px solid $grey-hover;
 
@@ -57,10 +56,16 @@
 }
 
 .photo__image img {
-  min-height: 280px;
+  height: 280px;
   width: 100%;
   object-fit: cover;
 
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
+.photo__image--full img {
   @media (min-width: $tablet-width) {
     height: 400px;
   }
