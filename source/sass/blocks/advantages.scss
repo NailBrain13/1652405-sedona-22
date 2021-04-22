@@ -24,10 +24,8 @@
 .advantages__list {
   @include list-reset;
   background-color: $blue;
-  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
@@ -40,8 +38,10 @@
   background-color: $grey-decor;
 
   &--small {
-    padding-bottom: 24px;
-    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 8px;
   }
 
   &--small:not(:last-child) {
@@ -72,8 +72,13 @@
 }
 
 .advantages__content {
-  padding-top: 39px;
-  padding-bottom: 35px;
+  padding-top: 47px;
+  padding-bottom: 22px;
+
+  &--full-reverse {
+    padding-top: 20px;
+    padding-bottom: 22px;
+  }
 
   @media (min-width: $tablet-width) {
     &--full {
@@ -97,11 +102,10 @@
 }
 
 .advantages__title {
-  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-bottom: 23px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -112,12 +116,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding-bottom: 28px;
 }
 
 .advantages__description {
-  margin: 0 auto;
-  width: 280px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;

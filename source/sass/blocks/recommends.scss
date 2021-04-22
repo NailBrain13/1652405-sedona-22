@@ -10,7 +10,7 @@
   text-align: left;
   color: $black;
   background-color: $white;
-  padding: 35px 0 35px 70px;
+  padding: 17px 20px 35px 70px;
   height: 416px;
 
   @media (min-width: $tablet-width) {
@@ -24,6 +24,7 @@
 
 .recommends__item {
   position: relative;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -36,10 +37,10 @@
   &::before {
     position: absolute;
     content: "";
-    top: -10px;
+    top: -8px;
     left: -48px;
-    width: 32px;
-    height: 38px;
+    width: 39px;
+    height: 37px;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -72,6 +73,8 @@
   }
 
   &--food::before {
+    top: -6px;
+    left: -50px;
     background-image: url("../img/icons/index-icons/icon-burger.svg");
 
     @media (min-width: $desktop-width) {
@@ -84,7 +87,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 18px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -95,5 +97,4 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin: 14px 0;
 }

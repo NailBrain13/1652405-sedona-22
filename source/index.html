@@ -12,6 +12,39 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>Седона</title>
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url("img/index-mobile.png");
+    }
+
+    /* Планшет */
+    @media (min-width: 768px) {
+      html {
+        /* Планшетный макет */
+        background-image: url("img/index-tablet.png");
+      }
+    }
+
+    /* Десктоп */
+    @media (min-width: 960px) {
+      html {
+        /* Десктопный макет */
+        background-image: url("img/index-desktop.png");
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+  </style>
+
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body class="page-body">
@@ -70,7 +103,7 @@
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--full">
           <div class="advantages__content advantages__content--full">
-            <h3 class="advantages__title">Настоящий город</h3>
+            <h3 class="advantages__title">Настоящий городок</h3>
             <p class="advantages__number">— №1 —</p>
             <p class="advantages__description">
               Седона не аттракцион для туристов, там течёт своя жизнь
@@ -145,7 +178,7 @@
           <h3 class="advantages__title">Мало туристов</h3>
           <p class="advantages__number">— №5 —</p>
           <p class="advantages__description">
-            Большинство едет в гранд каньони толпится там
+            Большинство едет в гранд каньон и толпится там
           </p>
         </li>
       </ul>
@@ -157,7 +190,7 @@
         <h3 class="registration__title">Заинтересовались?</h3>
         <p class="registration__content">
           Укажите предполагаемые даты поездки, и мы покажем вам
-          лучшиепредложения гостиниц в седоне
+          лучшие предложения гостиниц в седоне
         </p>
         <a class="registration__button button" href="#!">Найти гостиницу</a>
       </div>

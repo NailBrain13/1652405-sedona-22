@@ -8,7 +8,7 @@
 }
 
 .registration__wrapper {
-  padding: 33px 20px 49px;
+  padding: 12px 20px 49px;
 
   @media (min-width: $tablet-width) {
     padding: 58px 0;
@@ -23,7 +23,6 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin: 33px 0 21px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -34,7 +33,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin: 14px 0;
+  padding-bottom: 15px;
 }
 
 .registration__button {
