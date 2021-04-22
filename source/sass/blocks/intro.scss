@@ -33,11 +33,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/back-tab@2x.jpg");
     }
-
-    &::after {
-      height: 60px;
-      width: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +66,7 @@
   padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 124px 53px;
+    padding: 25px 124px 40px;
   }
 
   @media (min-width: $desktop-width) {
