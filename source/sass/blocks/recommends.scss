@@ -10,13 +10,14 @@
   text-align: left;
   color: $black;
   background-color: $white;
-  padding: 35px 0 35px 70px;
+  padding: 17px 20px 35px 70px;
   height: 416px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 158px 31px 60px 36px;
+    padding: 0;
+    padding-top: 136px;
     height: 330px;
   }
 }
@@ -24,11 +25,40 @@
 
 .recommends__item {
   position: relative;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
 
+    &--house {
+      padding-left: 30px;
+      padding-right: 60px;
+    }
+
+    &--food {
+      padding-right: 70px;
+    }
+
     &--souvenir {
+      padding-right: 42px;
+      order: 3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+
+    &--house {
+      padding-left: 35px;
+      padding-right: 70px;
+    }
+
+    &--food {
+      padding-right: 80px;
+    }
+
+    &--souvenir {
+      padding-right: 50px;
       order: 3;
     }
   }
@@ -36,10 +66,10 @@
   &::before {
     position: absolute;
     content: "";
-    top: -10px;
+    top: -8px;
     left: -48px;
-    width: 32px;
-    height: 38px;
+    width: 39px;
+    height: 37px;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -54,8 +84,13 @@
   &--house::before {
     background-image: url("../img/icons/index-icons/icon-house.svg");
 
+    @media (min-width: $tablet-width) {
+      top: -77px;
+      left: 90px;
+    }
+
     @media (min-width: $desktop-width) {
-      left: 155px;
+      left: 160px;
     }
   }
 
@@ -63,19 +98,29 @@
     background-image: url("../img/icons/index-icons/icon-gift.svg");
 
     @media (min-width: $tablet-width) {
-      left: 80px;
+      top: -78px;
+      left: 50px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 135px;
+      top: -75px;
+      left: 109px;
     }
   }
 
   &--food::before {
+    top: -6px;
+    left: -50px;
     background-image: url("../img/icons/index-icons/icon-burger.svg");
 
+    @media (min-width: $tablet-width) {
+      top: -76px;
+      left: 62px;
+    }
+
     @media (min-width: $desktop-width) {
-      left: 161px;
+      top: -70px;
+      left: 127px;
     }
   }
 }
@@ -84,7 +129,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 18px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -95,5 +139,4 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin: 14px 0;
 }

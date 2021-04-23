@@ -27,7 +27,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
   }
 }
 
@@ -35,33 +41,48 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 6px;
   box-shadow: $box-shadow, $box-shadow-2;
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
-  }
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 26px;
 
-  &:last-child {
-    padding-bottom: 5px;
-    background: $shadow-menu;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 7px;
+    &:nth-child(2) {
+      padding-left: 24px;
+    }
 
-    @media (min-width: $tablet-width) {
-      background: none;
+    &:nth-child(3) {
+      margin-left: 160px;
+    }
+
+    &:last-child {
+      padding-bottom: 5px;
+      background: $shadow-menu;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100% 7px;
+
+      @media (min-width: $tablet-width) {
+        background: none;
+      }
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      padding-left: 20px;
+    }
 
     &:nth-child(3) {
-      margin-left: 140px;
+      margin-left: 240px;
     }
   }
 }
+
 
 .main-nav__toggle {
   display: block;

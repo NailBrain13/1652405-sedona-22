@@ -33,11 +33,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/back-tab@2x.jpg");
     }
-
-    &::after {
-      height: 60px;
-      width: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -65,14 +60,17 @@
 }
 
 .intro__wrapper {
-  padding: 32px 20px 27px;
+  padding-top: 17px;
+  padding-left: 23px;
+  padding-right: 25px;
+  padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 124px 53px;
+    padding: 25px 124px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 358px 41px;
+    padding: 36px 358px 25px;
   }
 }
 
@@ -80,6 +78,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -90,5 +89,4 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  margin: 14px 0 27px 0;
 }

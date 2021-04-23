@@ -12,10 +12,10 @@
 }
 
 .page-footer__wrapper {
-  padding-top: 38px;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 0 0;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,13 +30,33 @@
 }
 
 .page-footer__hashtag {
-  padding-bottom: 34px;
+  padding-bottom: 10px;
 }
 
 .page-footer__social {
-  padding-bottom: 45px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+    padding-right: 10px;
+  }
 }
 
 .page-footer__copyright {
+  padding-right: 10px;
   align-self: flex-start;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 25px;
+  }
 }
