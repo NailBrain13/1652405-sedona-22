@@ -60,10 +60,7 @@
 }
 
 .intro__wrapper {
-  padding-top: 17px;
-  padding-left: 23px;
-  padding-right: 25px;
-  padding-bottom: 6px;
+  padding: 17px 25px 6px 23px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 124px 40px;
