@@ -38,16 +38,11 @@
   background-color: $grey-decor;
 
   &--small {
-    padding-top: 8px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
+    padding: 8px 30px 10px 30px;
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
-      padding: 0;
-      padding-top: 20px;
-      padding-bottom: 32px;
+      padding: 20px 0 32px 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -84,18 +79,15 @@
 
 .advantages__item-wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
-    padding-right: 55px;
+    padding: 0 55px 0 50px;
   }
 }
 
 .advantages__content {
-  padding-top: 47px;
-  padding-bottom: 22px;
+  padding: 47px 0 22px 0;
 
   &--full-reverse {
-    padding-top: 20px;
-    padding-bottom: 22px;
+    padding: 20px 0 22px 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -113,16 +105,12 @@
   @media (min-width: $desktop-width) {
     &--full {
       width: 400px;
-      padding-top: 28px;
-      padding-left: 100px;
-      padding-right: 100px;
+      padding: 28px 100px 0 100px;
     }
 
     &--full-reverse {
       width: 400px;
-      padding-top: 30px;
-      padding-left: 100px;
-      padding-right: 100px;
+      padding: 30px 100px 0 100px;
     }
   }
 }
@@ -139,8 +127,7 @@
 
   &--small {
     @media (min-width: $desktop-width) {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding: 0 70px;
     }
   }
 }
