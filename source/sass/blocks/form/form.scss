@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: auto;
   padding-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
+  }
 }
 
 .form__fieldset {
@@ -107,6 +111,10 @@
         top: 25px;
         right: -53px;
         background-color: $grey-border-form;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -114px;
       }
     }
   }
