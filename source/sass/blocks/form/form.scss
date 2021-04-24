@@ -1,7 +1,7 @@
 .form {
   display: grid;
   grid-template-columns: auto;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 43px;
@@ -17,19 +17,8 @@
   &--places,
   &--impression,
   &--contacts {
+    padding-bottom: 0;
     border-bottom: 1px solid $grey-hover;
-  }
-
-  &--contacts {
-    padding-bottom: 0;
-  }
-
-  &--impression {
-    padding-bottom: 0;
-  }
-
-  &--places {
-    padding-bottom: 15px;
   }
 
   &--name {
@@ -176,6 +165,10 @@
   @include list-reset;
   text-align: start;
 
+  &--name {
+    padding-left: 0;
+  }
+
 
   &--radio {
     text-transform: none;
@@ -234,10 +227,11 @@
   }
 
   &--checkbox {
-    padding: 10px 0 0 80px;
+    padding-top: 15px;
+    padding-left: 80px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 130px;
+      padding: 10px 0 0 80px;
 
       &:nth-child(even) {
         padding-left: 90px;
