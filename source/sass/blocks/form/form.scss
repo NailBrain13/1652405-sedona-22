@@ -22,11 +22,11 @@
   }
 
   &--contacts {
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
 
   &--impression {
-    padding-bottom: 5px;
+    padding-bottom: 0;
   }
 
   &--places {
@@ -50,7 +50,7 @@
     &--contacts {
       grid-column: 1/3;
       grid-row: 2/3;
-      padding-top: 25px;
+      padding-top: 15px;
     }
 
     &--impression {
@@ -176,7 +176,7 @@
 
   &--radio {
     text-transform: none;
-    padding: 25px 0 5px 20px;
+    padding: 15px 0 15px 20px;
   }
 
   @media (min-width: $tablet-width) {
