@@ -329,11 +329,23 @@
   }
 }
 
-.form__sub-tittle {
+.form__sub-title {
   padding-right: 16px;
 
   &--contacts {
     padding-left: 20px;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
   }
 }
 
@@ -434,18 +446,4 @@
   background-image: url("../img/form/checkbox.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-}
-
-.form__text {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.form__text-short {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-  }
 }
