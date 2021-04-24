@@ -74,6 +74,16 @@
       flex-direction: row;
       padding-bottom: 25px;
     }
+
+    @media (min-width: $desktop-width) {
+      &--name {
+        padding-left: 190px;
+      }
+
+      &--places {
+        padding-top: 0;
+      }
+    }
   }
 }
 
@@ -183,11 +193,14 @@
     &--contacts {
       display: flex;
       justify-content: space-between;
+      padding-top: 50px;
     }
 
     &--places {
       display: flex;
       justify-content: space-between;
+      padding-top: 20px;
+      padding-left: 20px;
     }
   }
 }
@@ -428,6 +441,6 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: inline-block;
   }
 }
