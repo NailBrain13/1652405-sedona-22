@@ -45,6 +45,18 @@
   padding-bottom: 6px;
   box-shadow: $box-shadow, $box-shadow-2;
 
+  &:last-child {
+    padding-bottom: 5px;
+    background: $shadow-menu;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 7px;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     box-shadow: none;
     padding-top: 15px;
@@ -57,18 +69,6 @@
 
     &:nth-child(3) {
       margin-left: 160px;
-    }
-
-    &:last-child {
-      padding-bottom: 5px;
-      background: $shadow-menu;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: 100% 7px;
-
-      @media (min-width: $tablet-width) {
-        background: none;
-      }
     }
   }
 
