@@ -2,13 +2,11 @@
   padding-top: 18px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 28px;
-    padding-bottom: 40px;
+    padding: 28px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 37px;
-    padding-bottom: 88px;
+    padding: 37px 0 88px;
   }
 }
 
@@ -17,17 +15,14 @@
 }
 
 .video__inner-wrapper {
-  padding: 0 28px;
-  padding-bottom: 35px;
+  padding: 0 28px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 161px;
-    padding-bottom: 70px;
+    padding: 0 161px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 377px;
-    padding-bottom: 65px;
+    padding: 0 377px 65px;
   }
 }
 
