@@ -3,6 +3,7 @@
   text-align: start;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
@@ -14,11 +15,11 @@
 }
 
 .photo__item {
-  padding: 20px 0;
-  border-bottom: 2px solid $grey-hover;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid $grey-hover;
 
   &:first-child {
-    border-top: 2px solid $grey-hover;
+    border-top: 1px solid $grey-hover;
   }
 
 
@@ -75,7 +76,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  margin-top: 11px;
+  margin-bottom: 0;
 }
 
 .photo__author {
@@ -83,6 +84,7 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+  margin-top: 0;
 }
 
 .photo__likes {
@@ -94,6 +96,7 @@
   align-self: center;
   grid-row: 1/3;
   grid-column: 2/3;
+  margin-bottom: 1px;
 
   @media (min-width: $tablet-width) {
     padding-right: 20px;
