@@ -39,6 +39,8 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
+exports.html = htmlmin;
+
 //Images
 const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -69,7 +71,7 @@ exports.createWebp = createWebp;
 
 //Sprite
 const sprite = () => {
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("build/img/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -118,7 +120,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -130,19 +132,33 @@ const server = (done) => {
 exports.server = server;
 
 // Reload
-const reload = done => {
+const reload = (done) => {
   sync.reload();
   done();
 }
+
+exports.reload = reload;
+
 
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html"));
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
-);
+  clean,
+  copy,
+  gulp.parallel(
+    styles,
+    html,
+    copyImages,
+    optimizeImages,
+    createWebp,
+    sprite
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
