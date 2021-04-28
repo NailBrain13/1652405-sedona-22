@@ -63,7 +63,7 @@ exports.images = optimizeImages;
 
 //Webp
 const createWebp = () => {
-  return gulp.src("build/img/**/*.{jpg,png}")
+  return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
@@ -144,7 +144,7 @@ exports.reload = reload;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 exports.default = gulp.series(
