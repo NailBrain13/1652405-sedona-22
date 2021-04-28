@@ -3,6 +3,7 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const htmlmin = require("gulp-htmlmin");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
@@ -31,9 +32,23 @@ const styles = () => {
 
 exports.styles = styles;
 
+//HTML
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+}
+
 //Images
-const optimizeimages = () => {
+const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.images = copyImages;
+
+const optimizeImages = () => {
+  return gulp.src("build/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
@@ -41,11 +56,12 @@ const optimizeimages = () => {
     ]))
     .pipe(gulp.dest("build/img"))
 }
-exports.images = optimizeimages;
+exports.images = optimizeImages;
+
 
 //Webp
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
+  return gulp.src("build/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
@@ -53,8 +69,10 @@ exports.createWebp = createWebp;
 
 //Sprite
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore())
+  return gulp.src("build/img/icons/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 }
@@ -85,7 +103,13 @@ exports.clean = clean;
 //Build
 const build = gulp.series(
   clean,
-  copy
+  copy,
+  styles,
+  html,
+  copyImages,
+  optimizeImages,
+  createWebp,
+  sprite
 )
 exports.build = build;
 
