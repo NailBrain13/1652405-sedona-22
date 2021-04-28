@@ -8,6 +8,8 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -48,6 +50,44 @@ const createWebp = () => {
     .pipe(gulp.dest("build/img"))
 }
 exports.createWebp = createWebp;
+
+//Sprite
+const sprite = () => {
+  return gulp.src("source/img/icons/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+exports.sprite = sprite;
+
+//Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico",
+    "source/img/**/*.{jpg,png,svg}",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+exports.copy = copy;
+
+//Clean
+
+const clean = () => {
+  return del("build");
+};
+exports.clean = clean;
+
+//Build
+const build = gulp.series(
+  clean,
+  copy
+)
+exports.build = build;
 
 // Server
 
