@@ -10,7 +10,7 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-var cheerio = require("gulp-cheerio");
+const cheerio = require("gulp-cheerio");
 const del = require("del");
 const sync = require("browser-sync").create();
 
