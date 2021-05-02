@@ -261,6 +261,7 @@
   font-size: 18px;
   line-height: 26px;
   padding: 18px 10px 14px 22px;
+  outline: none;
 
   @media (min-width: $desktop-width) {
     &--phone,
@@ -272,6 +273,11 @@
 
 .form__input:hover {
   background-color: $grey-hover;
+}
+
+.form__input:focus {
+  background-color: $white;
+  outline: 4px solid $grey-hover;
 }
 
 .form__label {
