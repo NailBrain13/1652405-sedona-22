@@ -404,6 +404,7 @@
   background-color: $blue;
   padding: 19px 33px 14px 32px;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -411,6 +412,20 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey-disabled;
   }
 }
 

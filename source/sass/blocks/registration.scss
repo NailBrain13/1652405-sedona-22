@@ -68,4 +68,18 @@
     padding: 15px 121px 18px 121px;
     width: 458px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey-disabled;
+  }
 }

@@ -54,6 +54,20 @@
   border: none;
   background-color: $blue;
   padding: 18px 64px 14px 64px;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey-disabled;
+  }
 }
 
 .pop-up__wrapper-btn {
