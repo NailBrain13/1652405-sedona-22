@@ -11,14 +11,12 @@
   color: $black;
   background-color: $white;
   padding: 17px 20px 35px 70px;
-  height: 416px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     padding-top: 136px;
-    height: 330px;
   }
 }
 
