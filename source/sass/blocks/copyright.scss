@@ -8,3 +8,13 @@
 .copyright__icon {
   fill: $black;
 }
+
+.copyright__icon:hover,
+.copyright__icon:focus {
+  fill: $blue;
+}
+
+.copyright__icon:active {
+  fill: $black;
+  opacity: 0.3;
+}
