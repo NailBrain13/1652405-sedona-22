@@ -15,12 +15,25 @@
   }
 }
 
+.social__item:hover,
+.social__item:focus {
+  background-color: $blue-hover;
+}
+
+.social__item:active {
+  background-color: $blue-active;
+}
+
 .social__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 46px;
   height: 48px;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
 
 .social__icon {
