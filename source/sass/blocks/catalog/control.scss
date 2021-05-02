@@ -71,3 +71,23 @@
     width: 540px;
   }
 }
+
+.control__btn-icon:hover,
+.control__btn-icon:focus {
+  fill: $grey-controls;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+    opacity: 0.6;
+  }
+}
+
+.control__btn-icon:active {
+  fill: $grey-controls;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
