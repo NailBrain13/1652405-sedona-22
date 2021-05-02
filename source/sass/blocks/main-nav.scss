@@ -81,6 +81,26 @@
       margin-left: 240px;
     }
   }
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+
+    @media (min-width: $tablet-width) {
+      color: $blue;
+      background-color: transparent;
+    }
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $blue-active;
+
+    @media (min-width: $tablet-width) {
+      color: rgba($black, 0.3);
+      background-color: transparent;
+    }
+  }
 }
 
 
@@ -88,21 +108,25 @@
   display: block;
   position: absolute;
   right: 17px;
-  top: 16px;
+  bottom: -40px;
   width: 23px;
   height: 23px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icons/icon-cross.svg");
+  background-image: url("../img/icons/icon-menu.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   &:hover,
   &:focus {
     opacity: 0.6;
   }
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  &:active {
+    opacity: 0.3;
   }
 }
