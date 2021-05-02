@@ -39,6 +39,26 @@
   @media (min-width: $tablet-width) {
     fill: $white;
   }
+
+  &:hover,
+  &:focus {
+    fill: $grey-controls;
+
+    @media (min-width: $tablet-width) {
+      fill: $white;
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    fill: $grey-controls;
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
 }
 
 .control__volume-bar {
@@ -69,25 +89,5 @@
 
   @media (min-width: $desktop-width) {
     width: 540px;
-  }
-}
-
-.control__btn-icon:hover,
-.control__btn-icon:focus {
-  fill: $grey-controls;
-
-  @media (min-width: $tablet-width) {
-    fill: $white;
-    opacity: 0.6;
-  }
-}
-
-.control__btn-icon:active {
-  fill: $grey-controls;
-  opacity: 0.3;
-
-  @media (min-width: $tablet-width) {
-    fill: $white;
-    opacity: 0.3;
   }
 }

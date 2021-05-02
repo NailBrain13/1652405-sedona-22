@@ -13,15 +13,15 @@
   &:not(:last-child) {
     margin-right: 6px;
   }
-}
 
-.social__item:hover,
-.social__item:focus {
-  background-color: $blue-hover;
-}
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
 
-.social__item:active {
-  background-color: $blue-active;
+  &:active {
+    background-color: $blue-active;
+  }
 }
 
 .social__link {
@@ -30,10 +30,10 @@
   align-items: center;
   width: 46px;
   height: 48px;
-}
 
-.social__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {

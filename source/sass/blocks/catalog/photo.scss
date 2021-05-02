@@ -118,18 +118,19 @@
     fill: $white;
     opacity: 1;
   }
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $black;
+    opacity: 1;
+  }
 }
 
-.photo__likes-btn-icon:hover,
-.photo__likes-btn-icon:focus {
-  fill: $blue;
-  opacity: 1;
-}
-
-.photo__likes-btn-icon:active {
-  fill: $black;
-  opacity: 1;
-}
 
 .photo__desc {
   @media (min-width: $tablet-width) {

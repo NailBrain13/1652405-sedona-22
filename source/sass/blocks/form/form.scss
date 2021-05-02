@@ -269,15 +269,15 @@
       width: 316px;
     }
   }
-}
 
-.form__input:hover {
-  background-color: $grey-hover;
-}
+  &:hover {
+    background-color: $grey-hover;
+  }
 
-.form__input:focus {
-  background-color: $white;
-  outline: 4px solid $grey-hover;
+  &:focus {
+    background-color: $white;
+    outline: 4px solid $grey-hover;
+  }
 }
 
 .form__label {
@@ -363,6 +363,9 @@
 }
 
 .form__field {
+  &::placeholder {
+    color: $black;
+  }
   width: 100%;
   height: 160px;
   resize: none;
@@ -374,6 +377,7 @@
   line-height: 26px;
   padding: 13px 23px 29px 21px;
   margin-bottom: 35px;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     margin: 35px 0 52px;
@@ -382,7 +386,13 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 55px;
   }
+
+  &:focus {
+    background-color: $white;
+    outline: 4px solid $grey-hover;
+  }
 }
+
 
 .form__button {
   font-weight: 700;
