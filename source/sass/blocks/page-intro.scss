@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 97px;
+    padding-top: 92px;
     height: 288px;
     background-image: url("../img/background/back-alt-tab.jpg");
 
@@ -34,7 +34,6 @@
     }
 
     &::after {
-      height: 60px;
       width: 100%;
     }
   }
@@ -69,7 +68,7 @@
   padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 155px 45px;
+    padding: 40px 163px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,6 +84,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
