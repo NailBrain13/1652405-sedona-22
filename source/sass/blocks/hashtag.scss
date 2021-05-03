@@ -1,3 +1,9 @@
+.hashtag {
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+  }
+}
+
 .hashtag__content {
   font-weight: 700;
   font-size: 21px;
