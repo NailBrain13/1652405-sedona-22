@@ -18,6 +18,10 @@
     padding: 0;
     padding-top: 136px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 138px;
+  }
 }
 
 
@@ -47,19 +51,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    margin-bottom: 65px;
 
     &--house {
-      padding-left: 35px;
+      padding-left: 65px;
       padding-right: 70px;
     }
 
-    &--food {
-      padding-right: 80px;
-    }
-
     &--souvenir {
-      padding-right: 50px;
+      padding-left: 70px;
+      padding-right: 70px;
       order: 3;
     }
   }
@@ -102,7 +103,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -75px;
+      top: -79px;
     }
   }
 
@@ -118,7 +119,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -70px;
+      top: -74px;
     }
   }
 }
