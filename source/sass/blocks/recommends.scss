@@ -34,18 +34,15 @@
     margin-bottom: 46px;
 
     &--house {
-      padding-left: 35px;
-      padding-right: 35px;
+      padding: 0 35px 0;
     }
 
     &--food {
-      padding-left: 50px;
-      padding-right: 50px;
+      padding: 0 50px;
     }
 
     &--souvenir {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding: 0 30px;
       order: 3;
     }
   }
@@ -54,13 +51,11 @@
     margin-bottom: 65px;
 
     &--house {
-      padding-left: 65px;
-      padding-right: 70px;
+      padding: 0 70px 0 65px;
     }
 
     &--souvenir {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding: 0 70px 0 70px;
       order: 3;
     }
   }

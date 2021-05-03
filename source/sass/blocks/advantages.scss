@@ -80,22 +80,18 @@
 
 .advantages__item-wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px 0;
 
     &-left {
-      padding-left: 40px;
-      padding-right: 38px;
+      padding: 0 38px 0 40px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 51px;
-    padding-right: 53px;
+    padding: 0 53px 0 51px;
 
     &-left {
-      padding-left: 42px;
-      padding-right: 46px;
+      padding: 0 46px 0 42px;
     }
   }
 }
@@ -143,8 +139,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 0 75px;
   }
 
   &--small {

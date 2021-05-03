@@ -12,13 +12,11 @@
 
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 49px;
-    padding-right: 27px;
+    padding: 0 28px 0 49px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 76px;
-    padding-right: 70px;
+    padding: 0 70px 0 76px;
   }
 }
 
@@ -41,8 +39,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-  padding-top: 10px;
-  padding-bottom: 6px;
+  padding: 10px 0 6px;
   box-shadow: $box-shadow, $box-shadow-2;
 
   &:last-child {
