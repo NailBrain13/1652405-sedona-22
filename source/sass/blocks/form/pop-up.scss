@@ -3,7 +3,7 @@
   width: auto;
   height: 280px;
   position: absolute;
-  bottom: 65px;
+  bottom: 164px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -15,7 +15,8 @@
   }
 
   &--fail {
-    bottom: 400px;
+    display: block;
+    bottom: 489px;
   }
 
   @media (min-width: $tablet-width) {
@@ -34,16 +35,23 @@
   }
 }
 
+.pop-up__wrapper {
+  padding: 0 50px;
+  padding-top: 29px;
+}
+
 .pop-up__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 26px;
 }
 
 .pop-up__content {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 25px;
 }
 
 .pop-up__button {
@@ -51,9 +59,15 @@
   font-size: 18px;
   line-height: 26px;
   color: $white;
+  text-transform: uppercase;
   border: none;
   background-color: $blue;
-  padding: 18px 64px 14px 64px;
+  padding: 18px 79px 14px;
+
+  &--close {
+    margin-top: 14px;
+    padding: 18px 76px 14px;
+  }
 
   &:hover,
   &:focus {
@@ -71,6 +85,8 @@
 }
 
 .pop-up__wrapper-btn {
+  margin: 0 auto;
+  min-width: 320px;
   background-color: $grey;
   padding: 20px 20px;
 }
