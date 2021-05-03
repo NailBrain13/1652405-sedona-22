@@ -1,29 +1,42 @@
 .form {
   display: grid;
   grid-template-columns: auto;
-  padding-bottom: 30px;
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 43px;
-  }
+  padding-bottom: 43px;
 }
 
 .form__fieldset {
   position: relative;
   margin: 0;
-  padding: 0 20px 10px;
   border: none;
 
   &--places,
   &--impression,
   &--contacts {
-    padding-bottom: 0;
     border-bottom: 1px solid $grey-hover;
   }
 
   &--name {
     border-bottom: 1px solid $grey-hover;
     border-top: 1px solid $grey-hover;
+    padding: 0 20px 5px;
+  }
+
+  &--contacts {
+    padding: 0 20px 15px;
+  }
+
+  &--impression {
+    padding: 0 20px 0;
+  }
+
+  &--places {
+    padding: 0 20px 0;
+  }
+
+  &--emotions {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -83,6 +96,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -116,6 +130,7 @@
   &--border {
     text-align: center;
     position: relative;
+    margin-bottom: 17px;
 
     @media (min-width: $tablet-width) {
       &::after {
@@ -174,7 +189,7 @@
 
   &--radio {
     text-transform: none;
-    padding: 15px 0 15px 20px;
+    padding: 15px 0 12px 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -213,16 +228,13 @@
 .form__item {
   padding-bottom: 20px;
 
-  &--radio,
-  &--checkbox {
+  &--radio {
     padding: 0 0 43px 60px;
 
     &:last-child {
       padding-bottom: 30px;
     }
-  }
 
-  &--radio {
     @media (min-width: $tablet-width) {
       padding: 0 0 55px 55px;
     }
@@ -231,6 +243,11 @@
   &--checkbox {
     padding-top: 15px;
     padding-left: 80px;
+    padding-bottom: 40px;
+
+    &:last-child {
+      padding-bottom: 37px;
+    }
 
     @media (min-width: $tablet-width) {
       padding-left: 125px;
@@ -246,7 +263,7 @@
   }
 
   &--contacts {
-    padding-bottom: 30px;
+    padding-bottom: 12px;
   }
 }
 
@@ -262,6 +279,14 @@
   line-height: 26px;
   padding: 18px 10px 14px 22px;
   outline: none;
+
+  &--phone {
+    margin-top: 10px;
+  }
+
+  &--email {
+    margin-top: 8px;
+  }
 
   @media (min-width: $desktop-width) {
     &--phone,
@@ -376,7 +401,7 @@
   font-size: 18px;
   line-height: 26px;
   padding: 13px 23px 29px 21px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   outline: none;
 
   @media (min-width: $tablet-width) {
@@ -403,7 +428,7 @@
   border: none;
   background-color: $blue;
   padding: 19px 33px 14px 32px;
-  width: 100%;
+  min-width: 280px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {

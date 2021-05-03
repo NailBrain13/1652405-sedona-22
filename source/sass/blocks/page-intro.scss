@@ -66,6 +66,7 @@
 
 .page-intro__wrapper {
   padding: 20px 20px 0;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 155px 45px;
@@ -80,7 +81,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-bottom: 12px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
