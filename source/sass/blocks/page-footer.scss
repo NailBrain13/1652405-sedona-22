@@ -30,7 +30,7 @@
 }
 
 .page-footer__hashtag {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
 .page-footer__social {
@@ -48,8 +48,9 @@
 }
 
 .page-footer__copyright {
-  padding-right: 10px;
-  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 5px;

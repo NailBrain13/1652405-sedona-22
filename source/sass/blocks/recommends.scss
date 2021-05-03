@@ -10,7 +10,7 @@
   text-align: left;
   color: $black;
   background-color: $white;
-  padding: 17px 20px 35px 70px;
+  padding: 17px 20px 10px 70px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -34,7 +34,7 @@
     }
 
     &--food {
-      padding-right: 70px;
+      padding-right: 72px;
     }
 
     &--souvenir {
@@ -105,7 +105,7 @@
 
   &--food::before {
     top: -6px;
-    left: -50px;
+    left: -52px;
     background-image: url("../img/icons/index-icons/icon-burger.svg");
 
     @media (min-width: $tablet-width) {
