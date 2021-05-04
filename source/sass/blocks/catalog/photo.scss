@@ -149,7 +149,7 @@
 
 .photo__desc {
   @media (min-width: $tablet-width) {
-    height: 80px;
+    min-height: 80px;
     padding-left: 21px;
     background-color: $grey;
     display: grid;
@@ -162,6 +162,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-height: 220px;
+    overflow: scroll;
     position: absolute;
     width: 100%;
     bottom: 0;
