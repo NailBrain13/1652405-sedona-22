@@ -136,6 +136,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+
+    &--full-reverse {
+      padding: 0 21px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -165,6 +169,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $desktop-width) {
+    &--full-reverse {
+      padding: 0 40px;
+    }
+  }
 }
 
 .advantages__img {
