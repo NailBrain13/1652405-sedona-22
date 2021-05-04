@@ -165,6 +165,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
+
+    &--reverse {
+      direction: ltr;
+    }
   }
 }
 
