@@ -42,7 +42,7 @@
   }
 
   &--emotions {
-    padding-top: 5px;
+    padding-top: 3px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -557,9 +557,9 @@
   content: "";
   position: absolute;
   left: -80px;
-  top: -10px;
-  width: 53px;
-  height: 53px;
+  top: -16px;
+  width: 55px;
+  height: 55px;
   background-color: $grey;
   border-radius: 5px;
 
@@ -577,8 +577,8 @@
 .form__checkbox:checked + .form__label::after {
   content: "";
   position: absolute;
-  left: -66px;
-  top: 8px;
+  left: -64px;
+  top: 4px;
   width: 24px;
   height: 17px;
   background-image: url("../img/form/checkbox.svg");

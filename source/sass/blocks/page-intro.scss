@@ -67,12 +67,20 @@
 .page-intro__wrapper {
   padding: 15px 20px 5px;
 
+  &--form {
+    padding-top: 19px;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 40px 163px 53px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 77px 380px 37px;
+
+    &--form {
+      padding: 89px 380px 25px;
+    }
   }
 }
 
