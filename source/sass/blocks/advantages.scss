@@ -67,13 +67,16 @@
       grid-row: 1/2;
       display: grid;
       grid-template-columns: min-content 1fr;
+    }
+  }
 
-      &-reverse {
-        display: flex;
-        flex-direction: row-reverse;
-        grid-column: 1/4;
-        grid-row: 3/4;
-      }
+  &--full-reverse {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/4;
+      grid-row: 3/4;
+      display: grid;
+      direction: rtl;
+      grid-template-columns: min-content 1fr;
     }
   }
 }
