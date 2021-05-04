@@ -26,7 +26,7 @@
   &--name {
     border-bottom: 1px solid $grey-hover;
     border-top: 1px solid $grey-hover;
-    padding: 0 20px 5px;
+    padding: 0 20px 5px 0;
   }
 
   &--contacts {
@@ -53,7 +53,7 @@
 
     &--name {
       grid-column: 2/3;
-      padding-left: 86px;
+      padding-left: 69px;
     }
 
     &--contacts {
@@ -90,7 +90,7 @@
 
     @media (min-width: $desktop-width) {
       &--name {
-        padding-left: 117px;
+        padding-left: 99px;
       }
 
       &--places {
@@ -199,6 +199,16 @@
       &::after {
         top: 27px;
       }
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 20px;
     }
   }
 }
@@ -398,10 +408,9 @@
 
 .form__sub-title {
   padding-right: 16px;
+  padding-left: 20px;
 
   &--contacts {
-    padding-left: 20px;
-
     @media (min-width: $desktop-width) {
       display: none;
     }
@@ -413,6 +422,7 @@
     @media (min-width: $desktop-width) {
       display: inline-block;
       padding-right: 12px;
+      padding-left: 0;
     }
   }
 }
