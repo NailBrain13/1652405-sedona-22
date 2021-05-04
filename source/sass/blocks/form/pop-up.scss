@@ -10,8 +10,9 @@
   right: 0;
   background-color: $white;
 
-  &--active {
-    display: block;
+
+  &--success {
+    display: none;
   }
 
   &--fail {
@@ -31,6 +32,12 @@
       z-index: 2;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--fail {
+      bottom: 118px;
+    }
+  }
 }
 
 .pop-up__wrapper {
@@ -41,7 +48,13 @@
     padding: 29px 100px 20px;
 
     &--fail {
-      padding: 29px 29px 20px;
+      padding: 20px 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--fail {
+      padding: 19px 60px 20px;
     }
   }
 }
@@ -54,7 +67,21 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+
+    &--fail {
+      line-height: 40px;
+      margin-bottom: 24px;
+      padding: 0 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--fail {
+      line-height: 40px;
+      margin-bottom: 28px;
+      padding: 0 20px;
+    }
   }
 }
 
@@ -63,6 +90,14 @@
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .pop-up__button {
@@ -74,6 +109,10 @@
   border: none;
   background-color: $blue;
   padding: 18px 79px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 123px 14px;
+  }
 
   &--close {
     margin-top: 14px;
