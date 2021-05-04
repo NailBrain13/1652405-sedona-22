@@ -15,21 +15,19 @@
   }
 
   &--fail {
-    display: block;
+    display: none;
     bottom: 489px;
   }
 
   @media (min-width: $tablet-width) {
     box-shadow: $shadow-popup;
     width: 650px;
-    height: 347px;
-    bottom: 250px;
+    bottom: 462px;
 
     &--fail {
-      padding-top: 70px;
       width: 400px;
       height: 347px;
-      bottom: 95px;
+      bottom: 228px;
       z-index: 2;
     }
   }
@@ -38,6 +36,14 @@
 .pop-up__wrapper {
   padding: 0 50px;
   padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 100px 20px;
+
+    &--fail {
+      padding: 29px 29px 20px;
+    }
+  }
 }
 
 .pop-up__title {
@@ -45,6 +51,11 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .pop-up__content {
@@ -67,6 +78,11 @@
   &--close {
     margin-top: 14px;
     padding: 18px 76px 14px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      padding: 18px 156px 14px;
+    }
   }
 
   &:hover,
@@ -89,4 +105,8 @@
   min-width: 320px;
   background-color: $grey;
   padding: 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 50px 50px;
+  }
 }
