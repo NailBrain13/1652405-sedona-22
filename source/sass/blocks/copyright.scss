@@ -6,15 +6,13 @@
   padding-right: 12px;
 }
 
-.copyright__icon {
-  fill: $black;
-
-  &:hover,
-  &:focus {
+.copyright__link {
+  & :hover,
+  & :focus {
     fill: $blue;
   }
 
-  &:active {
+  & :active {
     fill: $black;
     opacity: 0.3;
   }
