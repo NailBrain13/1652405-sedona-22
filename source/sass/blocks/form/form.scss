@@ -602,9 +602,7 @@
 }
 
 .form__checkbox:hover + .form__label::before,
-.form__checkbox:hover + .form__label::after,
-.form__checkbox:focus + .form__label::before,
-.form__checkbox:focus + .form__label::after {
+.form__checkbox:focus + .form__label::before {
   background-color: $grey-hover;
 }
 
