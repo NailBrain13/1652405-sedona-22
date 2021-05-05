@@ -13,15 +13,6 @@
   &:not(:last-child) {
     margin-right: 6px;
   }
-
-  &:hover,
-  &:focus {
-    background-color: $blue-hover;
-  }
-
-  &:active {
-    background-color: $blue-active;
-  }
 }
 
 .social__link {
@@ -31,8 +22,14 @@
   width: 46px;
   height: 48px;
 
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
   &:active {
     opacity: 0.3;
+    background-color: $blue-active;
   }
 }
 
