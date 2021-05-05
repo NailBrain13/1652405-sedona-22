@@ -42,17 +42,9 @@
       padding-right: 37px;
     }
   }
-}
 
-.control__btn-icon {
-  fill: $video-player;
-
-  @media (min-width: $tablet-width) {
-    fill: $white;
-  }
-
-  &:hover,
-  &:focus {
+  & :hover,
+  & :focus {
     fill: $grey-controls;
 
     @media (min-width: $tablet-width) {
@@ -61,14 +53,20 @@
     }
   }
 
-  &:active {
-    fill: $grey-controls;
+  & :active {
     opacity: 0.3;
 
     @media (min-width: $tablet-width) {
-      fill: $white;
       opacity: 0.3;
     }
+  }
+}
+
+.control__btn-icon {
+  fill: $video-player;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
   }
 }
 
