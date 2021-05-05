@@ -133,14 +133,11 @@
   }
 
   &:hover,
-  &--open:hover,
-  &:focus,
-  &--open:focus {
+  &:focus {
     opacity: 0.6;
   }
 
-  &:active,
-  &--open:active {
+  &:active {
     opacity: 0.3;
   }
 }
