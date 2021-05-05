@@ -87,7 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 53px 0 51px;
+    padding: 0 65px 0 51px;
   }
 }
 
@@ -133,10 +133,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-
-    &--full-reverse {
-      padding: 0 21px;
-    }
+    padding: 0 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -173,4 +170,12 @@
 .advantages__img-content {
   height: 100%;
   width: 100%;
+}
+
+.advantages__description-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
