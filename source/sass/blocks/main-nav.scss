@@ -39,11 +39,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-  padding: 10px 0 6px;
   box-shadow: $box-shadow, $box-shadow-2;
 
   &:last-child {
-    padding-bottom: 5px;
     background: $shadow-menu;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -78,6 +76,11 @@
       margin-left: 240px;
     }
   }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 10px 0 6px;
 
   &:hover,
   &:focus {
