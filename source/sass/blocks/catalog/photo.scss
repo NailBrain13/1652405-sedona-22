@@ -136,13 +136,13 @@
     padding-right: 10px;
   }
 
-  & :hover,
-  & :focus {
+  &:hover .photo__likes-btn-icon,
+  &:focus .photo__likes-btn-icon {
     fill: $blue-hover;
     opacity: 1;
   }
 
-  & :active {
+  &:active .photo__likes-btn-icon {
     fill: $black;
     opacity: 1;
   }
@@ -175,8 +175,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 220px;
-    overflow: scroll;
     position: absolute;
     width: 100%;
     bottom: 0;
