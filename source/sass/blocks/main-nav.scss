@@ -101,6 +101,28 @@
       background-color: transparent;
     }
   }
+
+  &--current {
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+      background-color: $blue;
+    }
+
+    @media (min-width: $tablet-width) {
+      color: $brown;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $brown;
+        background-color: transparent;
+      }
+    }
+  }
 }
 
 
