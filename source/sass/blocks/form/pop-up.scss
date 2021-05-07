@@ -7,6 +7,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $white;
+  z-index: 10;
 
 
   &--active {
@@ -15,17 +16,11 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: $shadow-popup;
-    width: 650px;
+    width: 640px;
 
     &--fail {
       width: 400px;
       height: 347px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--fail {
-      bottom: 118px;
     }
   }
 }
