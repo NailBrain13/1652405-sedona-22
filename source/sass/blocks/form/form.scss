@@ -353,6 +353,10 @@
     background-color: $white;
     outline: 4px solid $grey-hover;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .form__label {
@@ -577,6 +581,11 @@
   opacity: 0.3;
 }
 
+.form__radio:disabled + .form__label {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
 .form__checkbox + .form__label::before {
   content: "";
   position: absolute;
@@ -625,5 +634,10 @@
 }
 
 .form__checkbox:active + .form__label::after {
+  opacity: 0.3;
+}
+
+.form__checkbox:disabled + .form__label {
+  pointer-events: none;
   opacity: 0.3;
 }
