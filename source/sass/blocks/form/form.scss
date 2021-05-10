@@ -355,6 +355,7 @@
   }
 
   &:disabled {
+    background-color: $grey-hover;
     opacity: 0.3;
   }
 }
